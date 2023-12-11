@@ -5,10 +5,10 @@ const crudRouter = express.Router();
 
 crudRouter.route("/")
 		.get(getAll)
-        .post(create);
+                .post(create);
 
 crudRouter.route("/:id")
-        .delete(remove)
-        .put(update);
+                .delete(remove)
+                .put(update);
 
 module.exports = crudRouter;
